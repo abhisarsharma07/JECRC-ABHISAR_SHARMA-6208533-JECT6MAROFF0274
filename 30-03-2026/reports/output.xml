@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.11.5 on win32)" generated="2026-03-30T16:03:43.278383" rpa="false" schemaversion="5">
+<suite id="s1" name="Task3" source="C:\Users\abhis\OneDrive\Desktop\ROBOT JECRC\30-03-2026\Task3.robot">
+<test id="s1-t1" name="Task 3" line="6">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:03:43.643272" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.in/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-30T16:03:43.642263" elapsed="3.877104"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-30T16:03:47.519367" elapsed="0.066456"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T16:03:50.588218" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T16:03:47.586837" elapsed="3.001381"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:03:50.591645" level="INFO">Clicking element 'xpath=//a[text()=" Electronics "]'.</msg>
+<arg>xpath=//a[text()=" Electronics "]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T16:03:50.590252" elapsed="1.973215"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T16:03:54.565094" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T16:03:52.563467" elapsed="2.001627"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:03:54.566112" level="INFO">Executing JavaScript:
+window.scrollTo(0,500)
+Without any arguments.</msg>
+<arg>window.scrollTo(0,500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-03-30T16:03:54.566112" elapsed="0.046994"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T16:03:55.627682" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T16:03:54.614104" elapsed="1.013578"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:03:55.629691" level="INFO">Clicking element 'xpath=(//span[text()="boAt"])[2]'.</msg>
+<arg>xpath=(//span[text()="boAt"])[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T16:03:55.628691" elapsed="1.775792"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:03:57.405521" level="INFO">Executing JavaScript:
+window.scrollBy(0,500)
+Without any arguments.</msg>
+<arg>window.scrollBy(0,500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2026-03-30T16:03:57.404483" elapsed="0.025529"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T16:03:59.432636" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T16:03:57.430969" elapsed="2.001667"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:03:59.498902" level="INFO">${product_name} = boAt Bassheads 211 Wired Earphones with 10mm Drivers, Signature Sound, in-Line Microphone, 3.5mm Jack, Voice Assistant &amp; 120cm Cables (Off White Orange)</msg>
+<var>${product_name}</var>
+<arg>(//div[@data-cy="title-recipe"])[5]/descendant::span</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T16:03:59.433650" elapsed="0.065252"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Product_Name: ${product_name}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-30T16:03:59.498902" elapsed="0.000998"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:03:59.502900" level="INFO">Clicking element 'xpath=(//div[@data-cy="title-recipe"])[5]/descendant::span'.</msg>
+<arg>xpath=(//div[@data-cy="title-recipe"])[5]/descendant::span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T16:03:59.502900" elapsed="0.415675"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T16:04:02.919996" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T16:03:59.918575" elapsed="3.001421"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2026-03-30T16:04:02.919996" elapsed="0.026278"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T16:04:05.948799" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T16:04:02.947279" elapsed="3.001520"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:04:05.995917" level="INFO">${Page-Title} = boAt Bassheads 211 Wired Earphones with 10mm Drivers, Signature Sound, in-Line Microphone, 3.5mm Jack, Voice Assistant &amp; 120cm Cables (Off White Orange)</msg>
+<var>${Page-Title}</var>
+<arg>id=productTitle</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T16:04:05.948799" elapsed="0.047118"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:04:06.050820" level="INFO">Current page contains text 'boAt Bassheads 211 Wired Earphones with 10mm Drivers, Signature Sound, in-Line Microphone, 3.5mm Jack, Voice Assistant &amp; 120cm Cables (Off White Orange)'.</msg>
+<arg>${Page-Title}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-03-30T16:04:05.997424" elapsed="0.054395"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:04:06.075576" level="INFO">${Actual_price} = ₹599</msg>
+<var>${Actual_price}</var>
+<arg>xpath=(//span[@class="a-price a-text-price apex-basisprice-value"]/span)[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T16:04:06.051819" elapsed="0.023757"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:04:06.102675" level="INFO">${discount} = 299</msg>
+<var>${discount}</var>
+<arg>xpath=//span[@class="apex-savings-container"]/following-sibling::span/span[2]/span[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T16:04:06.076571" elapsed="0.026104"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:04:06.137471" level="INFO">${discount%} = -50%</msg>
+<var>${discount%}</var>
+<arg>xpath=//span[@class="apex-savings-container"]/span</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T16:04:06.103686" elapsed="0.033785"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Actual Price: ${Actual_price}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-30T16:04:06.138492" elapsed="0.001019"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Discount: ${discount}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-30T16:04:06.140506" elapsed="0.000999"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Discount %: ${discount%}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-30T16:04:06.141505" elapsed="0.000999"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>id=add-to-cart-button</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-03-30T16:04:06.142504" elapsed="0.373402"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:04:06.517706" level="INFO">Clicking button 'id=add-to-cart-button'.</msg>
+<arg>id=add-to-cart-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T16:04:06.517706" elapsed="3.184983"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T16:04:12.704893" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T16:04:09.703689" elapsed="3.001204"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:04:12.706662" level="INFO">Clicking element 'id=nav-cart'.</msg>
+<arg>id=nav-cart</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-30T16:04:12.705633" elapsed="1.450365"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-30T16:04:17.157622" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-30T16:04:14.155998" elapsed="3.001624"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-03-30T16:04:17.217579" level="INFO">Current page contains text 'boAt Bassheads 211 Wired Earphones with 10mm Drivers, Signature Sound, in-Line Microphone, 3.5mm Jack, Voice Assistant &amp; 120cm Cables (Off White Orange)'.</msg>
+<arg>${Page-Title}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-03-30T16:04:17.158729" elapsed="0.059859"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-30T16:04:17.218588" elapsed="2.235289"/>
+</kw>
+<status status="PASS" start="2026-03-30T16:03:43.641083" elapsed="35.813798"/>
+</test>
+<status status="PASS" start="2026-03-30T16:03:43.280404" elapsed="36.177747"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Task3" id="s1" pass="1" fail="0" skip="0">Task3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

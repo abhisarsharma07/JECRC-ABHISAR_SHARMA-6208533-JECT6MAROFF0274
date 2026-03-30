@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.11.5 on win32)" generated="2026-03-27T15:27:33.936202" rpa="false" schemaversion="5">
+<suite id="s1" name="Practice" source="C:\Users\abhis\OneDrive\Desktop\ROBOT JECRC\27-03-2026\Practice.robot">
+<test id="s1-t1" name="Opening Edge Browser" line="14">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-27T15:27:34.297702" level="INFO">Opening browser 'firefox' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-27T15:27:34.297702" elapsed="24.283575"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-27T15:27:58.581277" elapsed="0.321190"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Navigated to cricbuzz</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-03-27T15:27:58.903463" elapsed="0.002014"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-03-27T15:27:58.907301" level="INFO">Clicking element 'xpath=//input[@value="male"]'.</msg>
+<arg>xpath=//input[@value="male"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-03-27T15:27:58.907301" elapsed="0.122369"/>
+</kw>
+<kw name="Close Window" owner="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" start="2026-03-27T15:27:59.030671" elapsed="0.905326"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-27T15:28:02.937008" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-27T15:27:59.935997" elapsed="3.001011"/>
+</kw>
+<doc>Edge browser navigating to https://www.cricbuzz.com/</doc>
+<status status="PASS" start="2026-03-27T15:27:34.296621" elapsed="28.641286"/>
+</test>
+<doc>Opening of Browser</doc>
+<status status="PASS" start="2026-03-27T15:27:33.937707" elapsed="29.001866"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Practice" id="s1" pass="1" fail="0" skip="0">Practice</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
